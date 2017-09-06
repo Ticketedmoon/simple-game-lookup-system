@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="interactive.css">
+		<script
+  			src="http://code.jquery.com/jquery-3.2.1.min.js"
+  			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  			crossorigin="anonymous"></script>
+		<script src="interactive.js"></script>
+		<!-- //////////////////////////////// -->
+		<title> SQL / JS / Socket Website</title>
+	</head>
+	<body>
+		<div class="nav" id="navID">
+			<div class="nav_wrapper">
+				<p> SQL / JS / Socket Demo </p>
+			</div>
+		</div>
+		<!-- HR to line-off the navbar -->
+		<hr style="margin:0;">
+		<!-- Start body -->
+		<div class="topSearch">
+			<!-- Begin Search Menu -->
+			<div class="searchMenu">
+				<p> Search for Games </p>
+			</div>
+			<!-- game icons image -->
+			<div class="imageWrapper"> 
+				<img src="https://image.flaticon.com/sprites/new_packs/246269-video-games.png"/>
+			</div>
+			<!-- Search Engine (Right) -->
+			<div class="searchBar">
+				<form action="">
+					<input type="button" value="Push" class="button" id="cancelButton" onclick="colorChange()">
+					<input type="submit" value="Search" class="button">
+					<input type="text" class="searchme" id="suggest" name="myGames" placeholder="Type here" autocomplete="off"><br>
+					<div id="response"></div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
