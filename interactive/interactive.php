@@ -4,10 +4,10 @@
 	{
 		$response = "<ul><li>No data found!</li></ul>";
 
-		$connection = mysqli_connect('127.0.0.1', 'creedo', 'shanemini11', 'games') or die ("Connection failed...");
+		$connection = mysqli_connect('127.0.0.1', 'XXX', 'XXX', 'games') or die ("Connection failed...");
 		$q = $connection->real_escape_string($_POST['q']); 
 
-		$sql = mysqli_query($connection,"SELECT title FROM firstPersonShooters WHERE title LIKE '%$q%'");
+		$sql = mysqli_query($connection,"SELECT title FROM games WHERE title LIKE '%$q%'");
 		if($sql->num_rows > 0)
 		{
 			// If we find a matching row in the database.
